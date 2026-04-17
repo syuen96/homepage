@@ -11,7 +11,7 @@ export function middleware(req) {
   }
   if (!allowAll && (!host || !allowedHosts.includes(host))) {
     console.error(
-      `Host validation failed for: ${host}. Hint: Set the HOMEPAGE_ALLOWED_HOSTS environment variable to allow requests from this host / port.`,
+      `Host validation failed for: ${host}.`,
     );
     return NextResponse.json({ error: "Host validation failed. See logs for more details." }, { status: 400 });
   }
