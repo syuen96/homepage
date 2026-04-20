@@ -15,7 +15,7 @@ on:
   merge_group:
 
 env:
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: syuen906/homepage
 
 jobs:
 
